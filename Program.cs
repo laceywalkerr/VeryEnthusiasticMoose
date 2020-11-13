@@ -6,6 +6,7 @@ namespace EnthusiasticMoose
     {
         static void Main(string[] args)
         {
+            // Console.writeline is not a return, fyi
             Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine();
@@ -15,63 +16,26 @@ namespace EnthusiasticMoose
             MooseSays("I really am enthusiastic");
 
             // Ask some questions
-            CanadaQuestion();
-            EnthusiasticQuestion();
-            LoveCSharpQuestion();
-            SecretQuestion();
+            Question("Is Canada real?", "it seems unlikley", "I knew it!");
+            Question("Are you enthusiastic?", "Sooooo.... How much coffee do you drink?", "Honestly, me either. This is a farse and I'm constantly exhausted.");
+            Question("Do you love C# yet?", "Good job sucking up to your instructor!", "Really? Same. It's fine I guess. Keep calm and carry on.");
+            Question("Do you want to know a secret?", "ME TOO!!!! I love secrets...tell me one!", "Alright, then. Keep your secrets.");
         }
 
-        static void CanadaQuestion()
+        // This is a method(){}
+        static void Question(string question, string trueResponse, string falseResponse)
         {
-            bool isTrue = MooseAsks("Is Canada real?");
-            if (isTrue)
+            bool answer = MooseAsks(question);
+            if (answer)
             {
-                MooseSays("Really? It seems very unlikely.");
+                MooseSays(trueResponse);
             }
             else
             {
-                MooseSays("I  K N E W  I T !!!");
+                MooseSays(falseResponse);
             }
         }
 
-        static void EnthusiasticQuestion()
-        {
-            bool isEnthusiastic = MooseAsks("Are you enthusiastic?");
-            if (isEnthusiastic)
-            {
-                MooseSays("Yay!");
-            }
-            else
-            {
-                MooseSays("You should try it!");
-            }
-        }
-
-        static void LoveCSharpQuestion()
-        {
-            bool doesLoveCSharp = MooseAsks("Do you love C# yet?");
-            if (doesLoveCSharp)
-            {
-                MooseSays("Good job sucking up to your instructor!");
-            }
-            else
-            {
-                MooseSays("Honestly? Same. It's fine. Keep calm and carry on.");
-            }
-        }
-
-        static void SecretQuestion()
-        {
-            bool isEverythingFine = MooseAsks("Do you want to know a secret?");
-            if (isEverythingFine)
-            {
-                MooseSays("ME TOO!!!! I love secrets...tell me one!");
-            }
-            else
-            {
-                MooseSays("Alright, then. Keep your secrets.");
-            }
-        }
         static bool MooseAsks(string question)
         {
             Console.Write($"{question} (Y/N): ");
@@ -125,3 +89,20 @@ namespace EnthusiasticMoose
         }
     }
 }
+
+// Lets talk about :       
+// Console.Write($"{question} (Y/N): ");
+//    string answer = Console.ReadLine().ToLower();
+//          while (answer != "y" && answer != "n")
+//            {
+//                Console.Write($"{question} (Y/N): ");
+//                answer = Console.ReadLine().ToLower();
+//            }
+
+// string interpilation: ($"{question} (Y/N):")
+// "Write" is a method
+// Console is an object, you can see by the "." (dot) notation
+// a string is an object
+// string answer = variable deleration and assignment. the answer variables type is string. answer is being reassigned.
+
+//
