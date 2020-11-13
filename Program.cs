@@ -17,9 +17,10 @@ namespace EnthusiasticMoose
 
             // Ask some questions
             Question("Is Canada real?", "it seems unlikley", "I knew it!");
-            Question("Are you enthusiastic?", "Sooooo.... How much coffee do you drink?", "Honestly, me either. This is a farse and I'm constantly exhausted.");
+            Question("Are you enthusiastic?", "Frankly, I don't believe you. It's 2020, no one is entusiastic.", "Honestly, me either. This is a farse and I'm constantly exhausted.");
             Question("Do you love C# yet?", "Good job sucking up to your instructor!", "Really? Same. It's fine I guess. Keep calm and carry on.");
             Question("Do you want to know a secret?", "ME TOO!!!! I love secrets...tell me one!", "Alright, then. Keep your secrets.");
+            Question("Do you want to build a snowman?", "A snowman appears, it talks! The snowman says: HI! MY NAME IS OLAF AND I LIKE WARM HUGS!", "Okay, bye.");
         }
 
         // This is a method(){}
