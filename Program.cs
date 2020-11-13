@@ -56,7 +56,7 @@ namespace EnthusiasticMoose
             }
             else
             {
-                MooseSays("You will...oh, yes, you will...");
+                MooseSays("Honestly? Same. It's fine. Keep calm and carry on.");
             }
         }
 
@@ -69,7 +69,7 @@ namespace EnthusiasticMoose
             }
             else
             {
-                MooseSays("Oh, no...secrets are the best, I love to share them!");
+                MooseSays("Alright, then. Keep your secrets.");
             }
         }
         static bool MooseAsks(string question)
