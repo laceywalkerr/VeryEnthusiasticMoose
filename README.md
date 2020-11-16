@@ -373,8 +373,7 @@ Our moose is finally both enthusiastic and inquisitive, but the code for asking 
 
 ## Advanced Challenge
 
-[Magic Moose](./MAGIC_MOOSE.md)
+https://github.com/nashville-software-school/bangazon-inc/blob/cohort-43/book-1-orientation/chapters/MAGIC_MOOSE.md
 
 ## Advanced Challenge 2
-
-[Rock Paper Scissors](./ROCK_PAPER_SCISSORS.md)
+https://github.com/nashville-software-school/bangazon-inc/blob/cohort-43/book-1-orientation/chapters/ROCK_PAPER_SCISSORS.md
